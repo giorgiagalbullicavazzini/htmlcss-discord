@@ -12,17 +12,63 @@ Reset
 
 /* 
 ===========
-Common
+Container
 ===========
 */
 
 body {
-  font-family: 'Roboto', sans-serif;
+  background-color: rgb(16, 16, 16);
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 15px;
+}
+
+.big-container {
+  max-width: 1500px;
+  margin: auto;
 }
 
 .container {
-  width: 60%;
+  max-width: 1200px;
   margin: auto;
+}
+
+/* 
+===========
+Common
+===========
+*/
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.button {
+  border-radius: 20px;
+  padding: 10px 15px;
+  font-weight: 500;
+}
+
+.button.big {
+  font-size: 18px;
+}
+
+.button.white {
+  background-color: white;
+  color: black;
+}
+
+.button.black {
+  background-color: #23272a;
+  color: white;
+}
+
+h1 {
+  font-size: 45px;
+}
+
+p {
+  font-size: 20px;
 }
 
 /*
@@ -31,23 +77,7 @@ Debug
 ===========
 */
 
-.debug .header-top {
-  background-color: #ADD8E6;
-}
-
-.debug .header-top .container > * {
-  background-color: #DAA520;
-  border: 2px dashed;
-}
-
-.debug .header-bottom {
-  background-color: #00008B;
-  border-bottom: 4px solid #ADD8E6;
-}
-
 .debug .header-box {
-  background-color: #EE82EE;
-  border: 2px dashed;
   height: 400px;
 }
 
@@ -116,15 +146,14 @@ Header top
 ===========
 */
 
-.header-top .container {
-  display: flex;
-  justify-content: center;
-  padding: 15px 0;
-  font-size: 20px;
+.header-top {
+  background-color: #255EE9;
 }
 
-.header-top .container > * {
-  padding: 10px;
+.header-top .container {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
 }
 
 header .logo,
@@ -148,7 +177,7 @@ header ul {
 }
 
 header li {
-  padding: 0 5px;
+  padding: 0 20px;
 }
 
 /*
@@ -158,12 +187,22 @@ Header bottom
 */
 
 .header-bottom {
+  background-image: url(../img/jumbo.png);
+  background-size: cover;
+  background-repeat: no-repeat;
   padding: 50px 0;
+  color: white;
 }
 
 .header-box {
-  width: 75%;
+  width: 68%;
   margin: auto;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.header-box * {
+  margin: 20px 10px;
 }
 
 /*
