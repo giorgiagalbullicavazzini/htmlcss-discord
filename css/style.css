@@ -59,12 +59,21 @@ a {
 }
 
 .button.black {
-  background-color: #23272a;
+  background-color: #23272A;
+  color: white;
+}
+
+.button.blue {
+  background-color: #7289DA;
   color: white;
 }
 
 h1, h2 {
   font-size: 45px;
+}
+
+h3 {
+  font-size: 30px;
 }
 
 p {
@@ -222,6 +231,20 @@ main .section .container {
 .section .bigger-box {
   width: 100%;
   margin: auto;
+  text-align: center;
+}
+
+.section .bigger-box img {
+  width: 100%;
+}
+
+.section .bigger-box h2,
+.section .bigger-box p {
+  margin-top: 22px;
+}
+
+.section .bigger-box .download * {
+  margin: 25px auto;
 }
 
 /*
