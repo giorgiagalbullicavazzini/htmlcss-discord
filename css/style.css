@@ -222,6 +222,14 @@ main .section .container {
   margin: 25px auto;
 }
 
+.section .bigger-box .download h3 {
+  font-size: 25px;
+  line-height: 4em;
+  background-image: url(../img/stars.svg);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
 /*
 ===========
 Footer top
