@@ -63,12 +63,13 @@ a {
   color: white;
 }
 
-h1 {
+h1, h2 {
   font-size: 45px;
 }
 
 p {
   font-size: 20px;
+  line-height: 1.6em;
 }
 
 /*
@@ -76,27 +77,6 @@ p {
 Debug
 ===========
 */
-
-.debug .header-box {
-  height: 400px;
-}
-
-.debug .section:nth-child(even) {
-  background-color: #D3D3D3;
-}
-
-.debug .section .container .box {
-  border: 2px dashed;
-  height: 480px;
-}
-
-.debug .big-box {
-  background-color: #1E90FF;
-}
-
-.debug .small-box {
-  background-color: #FFC0CB;
-}
 
 .debug .bigger-box {
   background-color: #228B22;
@@ -211,13 +191,20 @@ Main
 ===========
 */
 
+main {
+  background-color: white;
+}
+
+main .section:nth-child(even) {
+  background-color: #F6F6F6;
+}
+
 main .section {
   padding: 50px 0;
 }
 
 main .section .container {
   display: flex;
-  justify-content: center;
 }
 
 .section .big-box {
@@ -226,6 +213,10 @@ main .section .container {
 
 .section .small-box {
   width: 40%;
+}
+
+.section .small-box * {
+  margin: 22px 15px;
 }
 
 .section .bigger-box {
