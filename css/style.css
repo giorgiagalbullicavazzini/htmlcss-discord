@@ -222,7 +222,7 @@ footer h4 {
 .footer-top .container {
   display: flex;
   justify-content: center;
-  padding: 10px 0 40px;
+  padding-top: 10px;
 }
 
 .footer-box {
@@ -263,16 +263,15 @@ Footer bottom
 ===========
 */
 
+.footer-bottom .container {
+  border-top: 1px solid #7289DA;
+}
+
 .footer-bigger {
   width: 100%;
-  margin: 30px auto 0;
+  margin-top: 15px;
+  padding-bottom: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.footer-bigger .logo,
-.footer-bigger .button {
-  padding: 5px 10px;
-  font-size: 20px;
 }
