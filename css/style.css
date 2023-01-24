@@ -167,6 +167,26 @@ main .section {
   padding: 50px 0;
 }
 
+main .section.wave {
+  background-image: url(../img/wave.svg);
+  background-size: 100% 100px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+main .section.wave-reverse {
+  background-image: url(../img/wave.svg);
+  background-size: 100% 100px;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-blend-mode: screen;
+  transform: scaleX(-1);
+}
+
+main .section.wave-reverse * {
+  transform: scaleX(-1);
+}
+
 main .section .container {
   display: flex;
 }
